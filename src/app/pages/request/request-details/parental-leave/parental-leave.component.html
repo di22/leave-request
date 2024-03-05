@@ -1,0 +1,18 @@
+<div class="d-flex flex-column">
+    @if(!editMode) {
+         <app-information-row key="Start" [value]="requestDetails.startDate | date: 'dd-MM-yyyy'"></app-information-row>
+         <app-information-row key="End" [value]="requestDetails.endDate | date: 'dd-MM-yyyy'"></app-information-row>
+    } @else {
+        <app-date-field label="Start date" [control]="startDate"></app-date-field>
+        <app-date-field label="End date" [control]="endDate" class="mt-1"></app-date-field>
+    }
+    <app-information-row key="Number of flexible days" [value]="requestDetails.numberOfMaximumFlexibleDays"></app-information-row>
+
+    @if(this.form.errors?.['maxDaysInvalid']) {
+        <span class="message-error">Please enter correct dates, You have only {{requestDetails.numberOfMaximumFlexibleDays}} to leave</span>
+    }
+</div>
+
+@if(requestDetails.flexible) {
+    <button class="edit-button" (click)="renderDates()">Edit</button>
+}

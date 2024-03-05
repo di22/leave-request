@@ -1,0 +1,29 @@
+:host {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+   .edit-button {
+    height: 10%;
+    width: 10%;
+    padding: 1rem 2rem;
+    width:auto;
+    background:#1abc9c;
+    border:none;
+    color:white;
+    cursor:pointer;
+    display:inline-block;
+    -webkit-transition:0.2s ease all;
+       -moz-transition:0.2s ease all;
+        -ms-transition:0.2s ease all;
+         -o-transition:0.2s ease all;
+            transition:0.2s ease all;
+
+            &:hover {
+              opacity:0.8;
+            }
+
+            &:active {
+              opacity:0.4;
+            }
+   }
+}

@@ -1,0 +1,110 @@
+{
+    "requests": [
+        { 
+            "id": "1",
+            "type": "INTERNAL_MOBILITY",
+            "personDetails": {
+                "fistName": "John",
+                "lastName": "Doe",
+                "birthDay": "1988-12-12",
+                "position": "Software Engineer"
+            },
+            "requestDetails": {
+                "desiredStartDate": "2023-01-02",
+                "from": "Mumbai IT center",
+                "to": "Amsterdam IT Operations"
+            },
+            "history": [
+                {
+                    "created": "2022-11-12T14:00:11Z",
+                    "status": "SUBMITTED"
+                },
+                {
+                    "created": "2022-11-15T13:02:22Z",
+                    "status": "APPROVED_BY_MANAGER" 
+                }
+            ] 
+        },
+        { 
+            "id": "2",
+            "type": "INTERNAL_MOBILITY",
+            "personDetails": {
+                "fistName": "Jane",
+                "lastName": "Doe",
+                "birthDay": "1990-02-12",
+                "position": "Data Engineer Lvl1"
+            },
+            "requestDetails": {
+                "desiredStartDate": "2024-01-02",
+                "from": "Ground operations",
+                "to": "Flight operations"
+            },
+            "history": [
+                {
+                    "created": "2023-11-12T14:20:11Z",
+                    "status": "SUBMITTED"
+                },
+                {
+                    "created": "2023-11-15T06:03:21",
+                    "status": "REJECTED_BY_MANAGER" 
+                }
+            ] 
+        },
+        { 
+            "id": "3",
+            "type": "PARENTAL_LEAVE",
+            "personDetails": {
+                "fistName": "Joice",
+                "lastName": "Doe",
+                "birthDay": "1995-01-12",
+                "position": "Accountant (Account Payable)"
+            },
+            "requestDetails": {
+                "startDate": "2024-03-01",
+                "endDate": "2025-02-28",
+                "flexible": true,
+                "numberOfMaximumFlexibleDays": 30
+            },
+            "history": [
+                {
+                    "created": "2023-11-12T22:22:11Z",
+                    "status": "SUBMITTED"
+                },
+                {
+                    "created": "2023-11-15T18:33:21",
+                    "status": "APPROVED_BY_MANAGER",
+                    "comment": "Good luck, wish you the best!" 
+                }
+            ] 
+        },
+        { 
+            "id": "4",
+            "type": "ILLNESS",
+            "personDetails": {
+                "fistName": "Jack",
+                "lastName": "Black",
+                "birthDay": "1965-11-01",
+                "position": "Business Analyst Lvl3"
+            },
+            "requestDetails": {
+                "startDate": "2024-03-01",
+                "endDate": "2024-03-14",
+                "longTerm": false,
+                "medicalDocumentRequired": true
+            },
+            "history": [
+                {
+                    "created": "2023-11-12T12:20:11Z",
+                    "status": "SUBMITTED",
+                    "comment": "Got the flu. :("
+                },
+                {
+                    "created": "2023-11-15T08:33:21",
+                    "status": "APPROVED_BY_MANAGER",
+                    "comment": "Get well soon!" 
+                }
+            ] 
+        }
+    ]
+}
+    

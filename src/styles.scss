@@ -1,0 +1,119 @@
+@import "assets/scss/main.scss";
+
+.d-flex {
+    display: flex !important;
+  }
+  
+  .flex-column {
+    flex-direction: column;
+  }
+  
+  .flex-row {
+    flex-direction: row;
+  }
+
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+
+
+  .justify-content-between {
+    justify-content: space-between;
+  }
+
+  .justify-content-center {
+    justify-content: center;
+  }
+
+  .justify-content-end {
+    justify-content: end;
+  }
+
+  .align-items-center {
+    align-items: center;
+  }
+
+  .m-x-1 {
+    margin-left: .5rem;
+    margin-right: .5rem;
+  }
+
+  .m-x-2 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .m-e-2 {
+    margin-right: 1rem;
+  }
+
+  .mt-1 {
+    margin-top: 1rem;
+  }
+
+  .p-1 {
+    padding: 1rem;
+  }
+
+  .w-100 {
+    width: 100%;
+  }
+
+  .w-75 {
+    width: 75%
+  }
+
+  .w-50 {
+    width: 50%
+  }
+
+  .w-25 {
+    width: 25%
+  }
+
+  .w-20 {
+    width: 20%
+  }
+    
+  .w-10 {
+    width: 10%
+  }
+
+  .fs-3 {
+    font-size: 3rem;
+  }
+
+  .rounded {
+    border-radius: 4px;
+  }
+  
+  .border {
+    box-shadow: rgba(9, 30, 66, 0.31) 0px 0px 1px 0px, rgba(9, 30, 66, 0.25) 0px 1px 1px 0px;
+  }
+
+  .key {
+    font-size: 2rem;
+    margin-right: .5rem;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.value {
+    font-size: 1.5rem;
+    color: #57b857;
+}
+
+.message-error {
+  color: #dc2626;
+  padding-bottom: 0.2rem;
+  font-size: 1.5rem;
+}
+
+  // media queries
+
+  @media (max-width: 767px) {
+    .flex-row {
+      flex-direction: column;
+    }
+  }

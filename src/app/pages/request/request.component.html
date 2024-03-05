@@ -1,0 +1,10 @@
+@if(requestFailed) {
+    <h1 class="falied-request">Please try a valid request ID</h1>
+} @else {
+    <app-request-summary [requestType]="request?.type || ''"></app-request-summary>
+    <section class="info">
+        <app-personal-details [personalDetails]="request?.personDetails"></app-personal-details>
+        <app-request-details [requestType]="request?.type" [requestDetails]="request?.requestDetails"></app-request-details>
+        <app-request-history [requestHistoryList]="request?.history || []"></app-request-history>
+    </section>
+}

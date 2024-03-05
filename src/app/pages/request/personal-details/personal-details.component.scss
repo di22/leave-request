@@ -1,0 +1,47 @@
+:host {
+    .card {
+        width: 20vw;
+        height: 40vh;
+        padding: .5rem 1rem;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: rgba(black, .2) 0px 1px 4px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: .2s;
+        
+        @media (max-width: 767px) {
+          width: 100%;
+          height: 100%;
+    }
+
+        &:hover {
+          transform: translateY(-5px);
+        }
+      
+        .title {
+          color: white;
+          margin: 1rem;
+          padding: .5rem 1rem;
+          border-radius: 50px;
+          transition: .2s;
+          cursor: pointer;
+          
+        
+         &--epic {
+            background-color: #8c14fc;
+            &:hover {
+              box-shadow: 0 0 12px rgba(#8c14fc, .8);
+            }
+          }
+      }
+        
+        .desc {
+          text-align: center;
+        }
+    
+      }
+      
+}

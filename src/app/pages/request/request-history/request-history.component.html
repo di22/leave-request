@@ -1,0 +1,9 @@
+<div class="rounded border p-1">
+@for (history of requestHistoryList; let idx = $index; track history) {
+    <div class="d-flex flex-row">
+        <img src="assets/icons/svg/{{icons[history.status]}}" class="m-e-2" width="20" height="20" alt="History status" /> 
+        <app-information-row [value]="history.created | date: 'dd-MM-yyyy - HH:mm'" class="m-e-2"></app-information-row>
+        <app-information-row [value]="history.status | toTitle"></app-information-row>
+    </div>
+  }
+</div>
