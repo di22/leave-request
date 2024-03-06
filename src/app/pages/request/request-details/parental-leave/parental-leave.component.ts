@@ -47,7 +47,5 @@ export class ParentalLeaveComponent implements OnInit {
       this.form.removeValidators(maxDateRangeValidator(this.requestDetails.numberOfMaximumFlexibleDays));
       this.form.reset();
     }
-
-    console.log(434)
   }
 }
