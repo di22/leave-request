@@ -1,3 +1,7 @@
+**Diaa Update about unit testing**:
+I used jest instead of karma and jasmin, because it`s 2 to 3 times faster because it uses jsdom instead of real browser, I created 61 test case it equals I think more than 90% of code coverage but not 100%.
+
+
 # Frontend assignment
 
 ## Description
