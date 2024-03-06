@@ -5,10 +5,9 @@ import { FormControl, ReactiveFormsModule } from '@angular/forms';
   selector: 'app-date-field',
   standalone: true,
   imports: [ReactiveFormsModule],
-  templateUrl: './date-field.component.html',
-  styleUrl: './date-field.component.scss'
+  templateUrl: './date-field.component.html'
 })
 export class DateFieldComponent {
-  @Input() control: FormControl;
+  @Input() control: FormControl = new FormControl('');
   @Input() label: string;
 }

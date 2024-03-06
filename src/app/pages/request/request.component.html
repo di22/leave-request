@@ -1,5 +1,5 @@
 @if(requestFailed) {
-    <h1 class="falied-request">Please try a valid request ID</h1>
+    <h1 data-testid="request-failed-error" class="falied-request">Please try a valid request ID</h1>
 } @else {
     <app-request-summary [requestType]="request?.type || ''"></app-request-summary>
     <section class="info">

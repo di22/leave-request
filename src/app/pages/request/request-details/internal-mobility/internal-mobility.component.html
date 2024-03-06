@@ -1,3 +1,5 @@
-<app-information-row key="Desired start date" [value]="requestDetails.desiredStartDate | date: 'dd-MM-yyyy'"></app-information-row>
-<app-information-row key="From" [value]="requestDetails.from"></app-information-row>
-<app-information-row key="To" [value]="requestDetails.to"></app-information-row>
+@if(requestDetails) {
+    <app-information-row data-testid="start-date" key="Desired start date" [value]="requestDetails.desiredStartDate | date: 'dd-MM-yyyy'"></app-information-row>
+    <app-information-row data-testid="from" key="From" [value]="requestDetails.from"></app-information-row>
+    <app-information-row data-testid="to" key="To" [value]="requestDetails.to"></app-information-row> 
+}

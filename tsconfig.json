@@ -21,7 +21,10 @@
     "module": "ES2022",
     "baseUrl": "./",
     "paths": {
-      "tslib" : ["path/to/node_modules/tslib/tslib.d.ts"]
+      "tslib" : ["path/to/node_modules/tslib/tslib.d.ts"],
+      "@core/*": ["src/app/core/*"],
+      "@domain/*": ["src/app/domain/*"],
+      "@shared/*": ["src/app/shared/*"]
     },
     "useDefineForClassFields": false,
     "lib": [

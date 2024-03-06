@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { RequestDetails, RequestType } from 'src/app/domain/request/models/request';
+import { RequestDetails, RequestType } from '@domain/request/models/request';
 import { RequestDetailsRenderDirective } from './request-details-render/request-details-render.directive';
 
 @Component({

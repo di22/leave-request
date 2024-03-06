@@ -1,5 +1,5 @@
-import { Directive, Input, OnChanges, ViewContainerRef } from '@angular/core';
-import { RequestDetails, RequestType } from 'src/app/domain/request/models/request';
+import { Directive, Input, OnChanges, ViewContainerRef, inject } from '@angular/core';
+import { RequestDetails, RequestType } from '@domain/request/models/request';
 import { IllinessComponent } from '../illiness/illiness.component';
 import { InternalMobilityComponent } from '../internal-mobility/internal-mobility.component';
 import { ParentalLeaveComponent } from '../parental-leave/parental-leave.component';
@@ -17,7 +17,10 @@ export class RequestDetailsRenderDirective implements OnChanges {
     'PARENTAL_LEAVE': ParentalLeaveComponent,
     'ILLNESS': IllinessComponent
   }
-  constructor(private viewContainerRef: ViewContainerRef) { }
+
+  private readonly viewContainerRef: ViewContainerRef = inject(ViewContainerRef);
+
+  constructor() { }
 
   ngOnChanges(): void {
     if(this.requestType && this.requestDetails) {

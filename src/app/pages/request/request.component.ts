@@ -22,7 +22,7 @@ export class RequestComponent implements OnInit {
   constructor(private requestService: RequestService) {}
 
   ngOnInit(): void {
-    this.getRequest(2);
+    this.getRequest(3);
   }
 
   getRequest(id: number): void {

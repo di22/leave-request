@@ -1,4 +1,6 @@
-<app-information-row key="Start" [value]="requestDetails.startDate | date: 'dd-MM-yyyy'"></app-information-row>
-<app-information-row key="End" [value]="requestDetails.endDate | date: 'dd-MM-yyyy'"></app-information-row>
-<app-information-row key="Long term illness" [value]="requestDetails.longTerm | booleanToText"></app-information-row>
-<app-information-row key="Requires Medical documents" [value]="requestDetails.medicalDocumentRequired| booleanToText"></app-information-row>
+@if(requestDetails) {
+    <app-information-row data-testid="start-date" key="Start" [value]="requestDetails.startDate | date: 'dd-MM-yyyy'"></app-information-row>
+    <app-information-row data-testid="end-date" key="End" [value]="requestDetails.endDate | date: 'dd-MM-yyyy'"></app-information-row>
+    <app-information-row data-testid="long-term" key="Long term illness" [value]="requestDetails.longTerm | booleanToText"></app-information-row>
+    <app-information-row data-testid="medical-required" key="Requires Medical documents" [value]="requestDetails.medicalDocumentRequired| booleanToText"></app-information-row>    
+}

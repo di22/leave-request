@@ -1,10 +1,10 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ParentalLeaveDetails } from 'src/app/domain/request/models/request';
+import { ParentalLeaveDetails } from '@domain/request/models/request';
 import { InformationRowComponent } from "../../../../shared/components/information-row/information-row.component";
 import { CommonModule } from '@angular/common';
 import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
-import { DateFieldComponent } from "../../../../shared/components/date-field/date-field.component";
-import { maxDateRangeValidator } from 'src/app/shared/validators/max-date-range.validator';
+import { DateFieldComponent } from "@shared/components/date-field/date-field.component";
+import { maxDateRangeValidator } from '@shared/validators/max-date-range.validator';
 
 @Component({
     selector: 'app-parental-leave',

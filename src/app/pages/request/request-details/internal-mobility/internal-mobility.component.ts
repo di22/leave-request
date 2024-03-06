@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { InternalMobilityDetails } from 'src/app/domain/request/models/request';
+import { InternalMobilityDetails } from '@domain/request/models/request';
 import { InformationRowComponent } from "../../../../shared/components/information-row/information-row.component";
 import { CommonModule } from '@angular/common';
 

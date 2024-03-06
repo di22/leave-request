@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
-import { PersonDetails } from 'src/app/domain/request/models/request';
+import { PersonDetails } from '@domain/request/models/request';
 
 @Component({
   selector: 'app-personal-details',

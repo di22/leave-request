@@ -6,4 +6,12 @@ test.describe('leave request page', () => {
 
     await expect(page).toHaveTitle('LeaveRequest');
   });
+
+  test('should has the title', async ({page}) => {
+    await page.goto('http://localhost:4200');
+
+    const title = page.getByTestId('request-type-title');
+    await expect(title.allInnerTexts).toBeTruthy();
+  });
+
 });

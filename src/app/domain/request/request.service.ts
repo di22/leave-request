@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Request } from './models/request';
-import { SettingsService } from 'src/app/core/services/settings.service';
+import { SettingsService } from '@core/services/settings.service';
 
 @Injectable({
   providedIn: 'root'

@@ -1,8 +1,8 @@
 import { Component, Input } from '@angular/core';
 import { InformationRowComponent } from "../../../../shared/components/information-row/information-row.component";
-import { IllnessDetails } from 'src/app/domain/request/models/request';
+import { IllnessDetails } from '@domain/request/models/request';
 import { CommonModule } from '@angular/common';
-import { BooleanToTextPipe } from 'src/app/shared/pipes/boolean-to-text.pipe';
+import { BooleanToTextPipe } from '@shared/pipes/boolean-to-text.pipe';
 
 @Component({
     selector: 'app-illiness',
